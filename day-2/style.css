@@ -1,0 +1,289 @@
+body{
+    margin: 0;
+    
+}
+
+/* container
+=================== */
+
+.container{
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width:1500px){
+    .container{
+        width:1200px;
+    }
+    .contact-us-in{
+        background-color: darkblue;
+        overflow: visible;
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width:1200px){
+    .container{
+        width:900px;
+    }
+}
+@media(max-width:900px){
+    .container{
+        width:700px;
+    }
+    .issues-in{
+        margin-top: 5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 10%;
+        padding-left: 5%;
+        margin-left: 5%;
+    }
+    
+    .issues-in img{
+        align-self: center;
+        margin-top: 5%;
+        width: 100%;
+        text-align: center;
+    }
+    .issues-in p{
+        align-self: center;
+        width: 100%;
+        font-variant: initial;
+    }
+    
+    .issues-in a{
+
+        align-self: center;
+        text-decoration: none;
+    }
+        
+}
+@media(max-width:700px){
+    .container{
+        width:500px;
+    }
+    .contact-us-in{
+        display: flex;
+        justify-content: start;
+    }
+    .contact-us-in h1{
+        font-size: 30px;
+        width: 90%;
+        margin-left: 4%;
+        margin-bottom: 5%;
+        font-weight: 900;
+        color: darkblue;
+    }
+    .contact-us-in p{
+        margin-bottom: 70%;
+        margin-left: 4%;
+        width:100%;
+        font-weight: 600;
+        font-size: 20px;
+        color: darkblue;
+    }
+}
+@media(max-width:576px){
+    .container{
+        width:90%;
+        margin-left: 10px;
+    }
+    .contact-us-in{
+        display: flex;
+        justify-content: start;
+    }
+    .contact-us-in h1{
+        font-size: 30px;
+        width: 90%;
+        margin-left: 4%;
+        margin-bottom: 5%;
+        font-weight: 900;
+        color: darkblue;
+    }
+    .contact-us-in p{
+        margin-bottom: 70%;
+        margin-left: 4%;
+        width:100%;
+        font-weight: 600;
+        font-size: 20px;
+        color: darkblue;
+    }
+    .about-us-in{
+        background-color: rgb(77, 34, 77);
+        margin-top: 5%;
+        padding: 5%;
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+    }
+    .about h1,h3,h4{
+        width: 100%;
+    }
+    
+    .issue h4,h5{
+        width: 100%;
+    }
+}
+
+/* Header
+======================*/
+
+.header_in{
+    display: flex;
+    padding-top: 30px;
+    justify-content: space-between;
+} 
+
+/* Nav
+================== */
+
+.nav{
+    font-size: 15px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.nav_link{
+    color:rgb(0, 0, 0);
+    text-decoration: none;
+    padding-left: 10px;
+}
+
+.contact-us-in{
+    background-image: url("https://images01.nicepage.com/a1389d7bc73adea1e1c1fb7e/2f6015003a5d56c487a4a3b3/pexels-photo-4101143.jpeg");
+    background-repeat: no-repeat;
+    width: 100%;
+    margin-top: 20px;
+    height: 850px;
+    display: flex;
+    justify-content:flex-end;
+    color: white;
+    flex-direction: column;
+}
+.contact-us-title{
+    margin-left: 15%;
+    padding-top: 30%;
+    font-size: 40px;
+    width: 50%;
+    font-family: sans-serif ;
+    font-style: normal;
+    font-weight: 900;
+}
+
+.contact-us-subtitle{
+    width: 40%;
+    margin-left: 15%;
+    margin-bottom: 10%;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.issues-in{
+    margin: 0 auto;
+    display: flex;
+    margin-top: 5%;
+    align-items: center;
+    margin-left: 5%;
+    justify-content: space-between;
+}
+.issues-in h1{
+    margin-right: 5%;
+    font-size: 30px;
+    font-weight: 600;
+}
+.issues-in img{
+    width: 15%;
+    text-align: center;
+    margin-left: 18%;
+}
+.issues-in p{
+    width: 40%;
+    font-variant: initial;
+    margin-left: 30%
+}
+
+.issues-in a{
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    margin-left: 10%;
+}
+
+.issues-in a:hover{
+    color: rgb(224, 133, 13);
+}
+.anxiety{
+    background-color: rgb(231, 131, 37);
+    color: white;
+    text-align: center;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+.anxiety p{
+    margin-left: 30%
+}
+.anxiety img{
+    padding-top: 5%;
+    padding-right: 20%;
+
+}
+.anxiety a{
+    margin-right: 10%;
+    color: white;
+    margin-top: 16%;
+}
+.anxiety a:hover{
+    color: rgb(223, 217, 217);
+}
+.relation{
+    text-align: center;
+}
+.relation img{
+    padding-top: 5%;
+    padding-right: 20%;
+}
+
+.relation a{
+    margin-right: 7%;
+    margin-top: 16%;
+}
+.psychologist{
+    text-align: center;   
+}
+.psychologist img{
+    padding-top: 5%;
+    padding-right: 20%;
+}
+.psychologist a{
+    margin-right: 7%;
+    margin-top: 16%;
+}
+
+.about-us-in{
+    width: 95%;
+    display: flex;
+    background-color: rgb(204, 199, 204);
+    margin-top: 5%;
+    padding: 5%;
+}
+.about{
+    padding: 5%;
+    width: 50%;
+}
+
+.issue{
+    width: 50%;
+    padding: 5%;
+}
+
+.issue h4{
+    font-weight: 900;
+    font-size: 25px;
+}
+
+.issue h5{
+    font-size: 15px;
+}
