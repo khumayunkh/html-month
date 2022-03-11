@@ -32,26 +32,36 @@ body{
     margin-top: 3%;
 
 }
-
+#burger{
+    display: none;
+}
 .nav{
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     color: white;
+    list-style-type: none;
+    margin-left: -15%;
 }
 
-.nav-link{
+.nav_link{
     margin-top: 2%;
     font-size: 25px;
     padding-right: 10%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
 }
 
+.nav_link:hover{
+    color: rgb(27, 135, 197);
+}
 .main h1{
     text-align: center;
     margin-top: 10%;
     font-size: 50px;
     color: white;
+    text-decoration: none;
 }
 
 .main-sub{
@@ -471,4 +481,71 @@ body{
         box-shadow: 10px -10px 15px rgb(117, 116, 116);
         margin-top: -5%;
     }
+    #burger, [for=burger]{
+        display: none;
+    }
+    
+     
+        [for=burger]{
+            display: block;
+            width: 30px;
+            text-align: center;
+            right: 100px;
+            top: 10px;
+            margin-top: 1.3%;
+        }
+        [for=burger]::before{
+            content: 'MENU';
+            font-family: "Font Awesome 5 Free";
+            font-weight: 400;
+            color: blanchedalmond;
+        }
+        nav{
+            margin-top: 10%;
+            display: none;
+            position: fixed;
+            list-style-type: none;
+            top: 0;
+            background: rgba(0, 0, 0, 0.692);
+            width: 100%;
+            height: 100%;
+            user-select: none;
+            padding-left: 50%;
+
+        }
+        nav ul {
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+        #burger:checked + label + nav{
+            display: block;
+            animation: show .5s ease;
+        }
+        #burger:checked +[for=burger]::before{
+            content: 'CLOSE';
+            position: fixed;
+        }
+        .nav_link{
+            text-align: center;
+            text-decoration: none;
+            color: white;
+            font-weight: 50px;
+            font-size: 40px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-left: 4%;
+        }
+    
+    
+    @keyframes show {
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
 }
+
